@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Wallet - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+            <h1>Dashboard</h1>
+            <p>Track your expenses and manage your financial status.</p>
+
+            <div style="margin-top: 15px;">
+                <a href="../index.html"
+                   style="padding: 8px 15px; background: #555; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                    Home
+                </a>
+
+                <a href="../Add-Expense/index.html"
+                   style="padding: 8px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+                    + Add Expense
+                </a>
+            </div>
+        </div>
+
+        <div class="summary-cards">
+
+            <div class="summary-card">
+                <div class="card-icon">💰</div>
+
+                <div class="card-content">
+                    <h3>Total Balance</h3>
+                    <p id="total-balance" title="Click to edit your balance" style="cursor: pointer;">3000 EGP</p>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="card-icon">💵</div>
+
+                <div class="card-content">
+                    <h3>Remaining Balance</h3>
+                    <p id="remaining-balance">3000 EGP</p>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="card-icon">💸</div>
+
+                <div class="card-content">
+                    <h3>Total Expenses</h3>
+                    <p id="total-expenses">0 EGP</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="expense-categories">
+            </div>
+
+        <div id="budget-warning" style="display: none; margin: 20px 0; padding: 15px; background: #fff3cd; color: #856404; border: 1px solid #ffe69c; border-radius: 8px;">
+        </div>
+
+        <section class="expense-categories">
+
+            <h2>Expense Categories</h2>
+
+            <div class="category-cards">
+
+                <div class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Food</h3>
+                    <p id="food-expenses">0 EGP</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🚗</div>
+                    <h3>Transportation</h3>
+                    <p id="transportation-expenses">0 EGP</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>Education</h3>
+                    <p id="education-expenses">0 EGP</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🛍️</div>
+                    <h3>Shopping</h3>
+                    <p id="shopping-expenses">0 EGP</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
